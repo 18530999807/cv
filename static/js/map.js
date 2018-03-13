@@ -13,7 +13,11 @@ html,body{
     }
 </style>  
 </head>  
-<body></body>  
+<body>
+        <a href='http://api.map.baidu.com/geocoder?address=郑州&output=html' target='_blank'> <img style="margin:2px" width="400" height="300" src="http://api.map.baidu.com/staticimage? 
+        width=400&height=300&zoom=11¢er=郑州" />  
+    </a>
+</body>  
 </html>  
 <script type="text/javascript">  
     var map = new BMap.Map("container");  
