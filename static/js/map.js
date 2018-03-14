@@ -13,24 +13,20 @@ html,body{
     }
 </style>  
 </head>  
-<body>
-        <a href='http://api.map.baidu.com/geocoder?address=郑州&output=html' target='_blank'> <img style="margin:2px" width="400" height="300" src="http://api.map.baidu.com/staticimage? 
-        width=400&height=300&zoom=11¢er=郑州" />  
-    </a>
-</body>  
+<body></body>  
 </html>  
 <script type="text/javascript">  
     var map = new BMap.Map("container");  
-    map.centerAndZoom(new BMap.Point(113.65 34.76), 13);  
+    map.centerAndZoom(new BMap.Point(116.403884,39.914887), 13);  
     map.enableScrollWheelZoom();  
     var marker=new BMap.Marker(new BMap.Point(116.403884,39.914887));  
     map.addOverlay(marker);  
-    var licontent="<b>郑州</b><br>";  
-        licontent+="<span><strong>地址：</strong>郑州市</span><br>";  
-        licontent+="<span><strong>电话：</strong>(010)63095718,(0371)62666666</span><br>";  
-        licontent+="<span class="\"input\"><strong></strong><input" class="\"outset\"" type=\"text\" name=\"origin\" value=\"郑州站\"/><input class="\"outset-but\"" type=\"button\" value=\"公交\" onclick=\"gotobaidu(1)\" /><input class="\"outset-but\"" type=\"button\" value=\"驾车\"  onclick=\"gotobaidu(2)\"/><a class="\"gotob\"" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:天安门"+"®ion=北京"+"&output=html\" target=\"_blank\"></a></span>";
+    var licontent="<b>天安门</b><br>";  
+        licontent+="<span><strong>地址：</strong>北京市东城区天安门广场北侧</span><br>";  
+        licontent+="<span><strong>电话：</strong>(010)63095718,(010)63095630</span><br>";  
+        licontent+="<span class="\"input\"><strong></strong><input" class="\"outset\"" type=\"text\" name=\"origin\" value=\"北京站\"/><input class="\"outset-but\"" type=\"button\" value=\"公交\" onclick=\"gotobaidu(1)\" /><input class="\"outset-but\"" type=\"button\" value=\"驾车\"  onclick=\"gotobaidu(2)\"/><a class="\"gotob\"" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:天安门"+"®ion=北京"+"&output=html\" target=\"_blank\"></a></span>";
   
-    var hiddeninput="<input type=\"hidden\" value=\""+'郑州'+"\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:天安门"+"\" name=\"destination\" />";
+    var hiddeninput="<input type=\"hidden\" value=\""+'北京'+"\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:天安门"+"\" name=\"destination\" />";
   
     var content1 ="<form id=\"gotobaiduform\" action=\"http://api.map.baidu.com/direction\" target=\"_blank\" method=\"get\">" + licontent +hiddeninput+"</form>";
    
