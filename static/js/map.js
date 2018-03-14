@@ -6,7 +6,7 @@
 	<style type="text/css">
 	body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
 	</style>
-	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wCO4ZDAzfpRKlVkPZB4L5lyvKjDlwfGH"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qZXx0FAiW3VFHZgF6IKwQU5bjwT3GckD"></script>
 	<title>地图展示</title>
 </head>
 <body>
